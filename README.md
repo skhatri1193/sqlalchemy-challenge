@@ -16,7 +16,7 @@ The project includes the following files:
 
 1. `hawaii_measurements.csv` - Contains collected from weather station. (e.g., station, date, prcp, tobs).
 2. `hawaii_stations.csv` - Contains station details (e.g., station, name, latitude, longitude).
-3. `hawaii.sqlite.csv` - Contains an SQLite database for Flask routes.
+3. `hawaii.sqlite.db` - Contains an SQLite database for Flask routes.
 
 ## Data Visualizations
 

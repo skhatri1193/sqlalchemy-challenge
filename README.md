@@ -23,14 +23,14 @@ The project includes the following files:
 ## Data Visualizations
 
 Here you can see a histogram and line graph of Hawaii weather.
-![HDV](sqlalchemy-challenge/Resources/hawaii_charts.png)
+![HDV](Resources/hawaii_charts.png)
 
 ## Flask API
 
 Flask API with routes that allow you to filter data from the SQLite database using SQLAlchemy.
 
 Homepage of the Hawaii weather data API with available routes:
-![API](sqlalchemy-challenge/Resources/api_landingpage.png)
+![API](Resources/api_landingpage.png)
 
 
 

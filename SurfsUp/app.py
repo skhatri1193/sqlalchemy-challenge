@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, func, desc
 from pathlib import Path
 from collections import OrderedDict
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
  
 
 #################################################
@@ -42,14 +42,8 @@ app = Flask(__name__)
 @app.route("/") # Create landing page for API
 def welcome():
     """List all available api routes."""
-    return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/precipitation<br/>"
-        f"/api/v1.0/stations<br/>"
-        f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/start_date<br/>"
-        f"/api/v1.0/start_date/end_date"
-    )
+    return render_template('index.html')
+        
     
 @app.route("/api/v1.0/precipitation")  # Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
 def precipitation():  

@@ -30,6 +30,7 @@ Here you can see a histogram and line graph of Hawaii weather.
 Flask API with routes that allow you to filter data from the SQLite database using SQLAlchemy.
 
 Homepage of the Hawaii weather data API with available routes:
+
 ![API](Resources/api_landingpage.png)
 
 

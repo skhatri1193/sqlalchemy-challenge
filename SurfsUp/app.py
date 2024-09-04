@@ -57,14 +57,10 @@ def precipitation():
     # Close session
     session.close()
 
-    # Create a list of dictionaries with `date` and `prcp` as the keys and values
-    all_precip = []
-    for date, prcp in results:
-        precip_dict = {}
-        precip_dict["date"] = date
-        precip_dict["prcp"] = prcp
-        all_precip.append(precip_dict)
-
+    # Returns json with the date as the key and the value as the precipitation.
+    all_precip = {}
+    for date,prcp in results:
+        all_precip[date] = prcp
     return jsonify(all_precip)
 
 @app.route("/api/v1.0/stations") # Return a JSON list of stations from the dataset.
